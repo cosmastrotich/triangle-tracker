@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <title>Triangle Tracker</title>
+</head>
+<body>
+
+<body style= "background-color:wheat;">
+
+  <h1>Triangle Tracker</h1>
+
+  <div class="unimportant">
+
+  <p>triangle tracker is an app that helps you to know the type of trianle that you want</p>
+
+  <h2>Types of triangles</h2>
+    <li>scalene triangle</li>
+    <li>Equilateral triangle</li>
+    <li>Isosceles triangles</li>
+
+  </div>
+    <form>
+      <div class="important">
+
+        <span>Base</span><input type="number" name="height" id="base"><br><br>
+        <span>Hypotenuse</span><input type="number" name="height" id="hypotenuse"><br><br>
+        <span>Height</span><input type="number" name="hypotenuse" id="height"><br><br>
+        <button id="button" style="color: rgb(224,39,26)" onclick="triangle()" >Try</button>
+
+
+      </div>
+
+      </form>
+
+      <script type="text/javascript">
+        function triangle() {
+          'use strict'
+
+
+          var side1 =document.getElementById('base').value;
+          var side2 =document.getElementById('height').value;
+          var side3 =document.getElementById('hypotenuse').value;
+
+
+
+        if(side1===side2 && side2===side3 && side1 === side3){
+            alert("it's Equilateral");
+        }
+
+       else if(side1===side2 || side1===side3 ||side2===side3){
+          alert("it's isocelece");
+        }
+
+        else if(side1!=side2 && side2!=side3 && side1!=side3){
+          alert("it's Scalene");
+        }
+
+        else{
+            alert("not a triangle");
+        }
+      }
+
+      </script>
+
+  </body>
+  </html>

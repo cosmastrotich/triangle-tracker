@@ -1,0 +1,14 @@
+body {
+    color: red;
+    font-style: oblique;
+    margin-right: auto;
+}
+h1{
+  color: red;
+}
+.inimportant{
+  background-color: grey;
+}
+.Try{
+  font-weight: bolder;
+}
